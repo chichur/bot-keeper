@@ -25,9 +25,12 @@ def rer():
 def api(file_path, uid):
     print(file_path)
     file = requests.get('https://api.telegram.org/file/bot{0}/voice/{1}'.format(token, file_path))
-    print('https://api.telegram.org/file/bot{0}/{1}'.format(token, file_path))
-    with open(file_path, 'wb') as f:
+    path = 'static/voices/' + file_path
+
+    with open(path, 'wb') as f:
         f.write(file.content)
+
+    return path
 
 
 def get_or_create(session, model, **kwargs):
