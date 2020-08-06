@@ -155,3 +155,5 @@ fabric.properties
 
 # static
 static/
+counters.json
+haarcascade_frontalface_default.xml
