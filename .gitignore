@@ -157,3 +157,4 @@ fabric.properties
 static/
 counters.json
 haarcascade_frontalface_default.xml
+opencv_python-4.3.0.36-cp38-cp38-win_amd64.whl
